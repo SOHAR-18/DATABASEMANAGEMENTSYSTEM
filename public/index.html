@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundSphere</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="logoutBtn">Logout</button>
+
+    <div class="container">
+        <h1>SoundSphere</h1>
+
+        <div class="content">
+            <div class="songs-section">
+                <h2>Available Songs</h2>
+                <ul id="songs"></ul>
+            </div>
+
+            <div class="playlists-section">
+                <h2>Your Playlists</h2>
+                <div class="playlist-input">
+                    <input type="text" id="playlistName" placeholder="New Playlist Name">
+                    <button id="createPlaylist">Create Playlist</button>
+                </div>
+                <div id="playlistsContainer"></div>
+            </div>
+        </div>
+
+        <audio id="audioPlayer" controls></audio>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
